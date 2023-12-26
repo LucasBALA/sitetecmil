@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://kit.fontawesome.com/51c53e7405.js" crossorigin="anonymous"></script>
+    <title>Tec Mil/ Clientes</title>
+
+    <style>
+        body {
+            background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+        }
+
+        footer .main {
+            margin-left: 250px;
+        }
+
+        .nagivation_header{
+            display: flex;
+            flex-direction: row;
+            gap: 3em;
+            z-index: 2;
+        }
+
+        .red-sep {
+            margin-left: 550px;
+        }
+        
+
+        .btn_icon_header {
+           display: none; 
+           background-color: transparent;
+           border: none;
+           cursor: pointer;
+        }
+        
+        .titlenossosclientes {
+            margin-top: 50px;
+            margin-left: 560px;
+            font-size: 46px;
+        }
+
+        @media screen and (max-width: 932px) {
+            .btn_icon_header {
+                display: block;
+            }
+            
+
+            .nagivation_header {
+                background-color: #ebe9e9;
+                position: absolute;
+                flex-direction: column;
+                top: 0;
+                height: 100%;
+                width: 50vw;
+                padding: 1em;
+                animation-duration: 0.5s;
+                margin-left: -200vw;
+            }
+
+            .red-sep {
+                width: 400px;
+                margin-left: 480px;
+            }
+
+            .titlenossosclientes {
+                margin-left: 520px;
+                font-size: 38px;
+            }
+
+            .social_media {
+                margin-left: -600px;
+            }
+
+            footer .main {
+                font-size: 14px;
+                margin-left: 0;
+            }
+        }
+
+        @keyframes showSidebar {
+            from {margin-left: -200vw};
+            top {margin-left: -75vw};
+        }
+
+@media screen and (max-width: 932px) {
+
+
+
+    .clock{
+        display: none;
+        margin-left: 1000px;
+    }
+
+
+    .cabecalho{
+        width: 100px; 
+    }
+
+    .Treinamentos .box {
+        background-color: red;
+        margin-left: 100px;
+    }
+
+   .Treinamentos{
+    font-size: 60px;
+    margin-left: -500px;
+   }
+
+   .logotipo{
+    height: 40px;
+   }
+
+  .titulo{
+    font-size: 30px;
+    margin-left: 250px;
+  }
+  .subtitulocard2{
+    width: 100%;
+  }
+  .subtitulocard{
+    margin-left: 250px;
+  }
+  .services, .card-content, .card-item, .card-wrapper {
+    margin-left: -125px;
+    width: 100%;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="cabecalho1" id="cabecalho1">
+    <div class="social_media">
+    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/lucas-ara%C3%BAjo-2a571021b/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>
+<header>
+    <nav class="cabecalho" id="cabecalho">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="teste.html"><img class="logotipo" src="Logo TecMil.png" alt="TecMil Industrial Services" style="margin-left: 20px;"></a>
+      <ul style="margin-left: 130px;"> 
+        <div class="nagivation_header" id="nagivation_header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <li><a href="teste.html"><i class="fa-solid fa-house-chimney"></i>Iníco</a></li>
+
+
+          <li><a href="quemsomos.html"><i class="fa-solid fa-users"></i>Empresa</a>
+          
+        
+          <li><a href="teste.html"><i class="fa-solid fa-screwdriver-wrench"></i>Serviços<i class="fa-solid fa-angle-down"></i></a>
+            <ul>
+        
+                <li><a href="ConsultoriaIndustrial.html">Consultoria Industrial</a></li>
+                <hr>
+        
+  
+                <li><a href="EngenhariaManutenção.html">Engenharia de Manutenção e Confiabilidade</a></li>
+                <hr>
+    
+        
+                  <li><a href="ElétricaEletromecânica.html">Instalações Elétricas e Eletromecânicas</a></li>
+                  <hr>
+    
+         
+                    <li><a href="AutomaçãoIndustrial.html">Automação Industrial</a></li>
+                    <hr>
+  
+    
+                      <li><a href="SPDA.html">SPDA</a></li>
+                      <hr>
+           
+              
+                        <li><a href="Treinamentos.html">Treinamentos</a></li>
+  
+            </ul>
+                      </li>
+
+            <li style="background-color: #fe0000;"><a href="#clientes"><i class="fa-solid fa-handshake"></i>Clientes</a></li>
+            
+
+        <li><a href="teste.html#falenos"><i class="fa-solid fa-envelope"></i>Contato</a></li>
+    </div>
+      </ul>
+      <div class="clock" style="color: #333; font-family: 'Kanit', sans-serif; margin-right: -285px; margin-top: -30px;"><i class="fa-solid fa-phone"></i> +55 11 4378-6482</div>
+  <div class="clock" style="color: #333; font-family: 'Kanit', sans-serif; display: flex; flex-direction: row; margin-top: 40px;"><i class="fa-brands fa-whatsapp"></i> +55 11 98989-6782</div>
+    </nav>
+  </header>
+
+<main class="Treinamentos" id="Treinamentos" tabindex="0" onclick="closeSidebar()">
+
+    <h1 class="titlenossosclientes" id="titlenossosclientes" data-aos="fade-down" style="color: #fe0000;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    text-shadow: 0px 1px black;
+    font-weight: bold;
+    text-transform: uppercase;">Nossos Clientes</h1>
+    <div class="red-sep" data-aos="fade-right" style="width: 390px;"></div>
+
+    <div class="clientex" style="margin-top: 100px;">
+        <div class="box-container">
+    
+            <div class="box" data-aos="fade-up">
+                <img src="ford.png" alt="">
+                <h3>FORD</h3>
+                <p>Foi realizado:<br>
+                    <br>•	Instalações e programação de robôs para área de soldagem da carroceria.<br>
+                    <br>•	Elaboração de diagrama unifilar e cálculo de energia incidente.<br>
+                    <br>•	Elaboração de sinalização de LOTO para as células de produção e manutenção.
+                    
+                </p>
+            </div>
+    
+            <div class="box" data-aos="fade-up">
+                <img src="caas.png" alt="">
+                <h3>CAAS</h3>
+                <p>Foi realizado:<br>
+                    <br>•	Projeto de linha automática com robô para montagem de caixa de direção da linha automotiva.
+                </p>
+            </div>
+    
+            <div class="box" data-aos="fade-up">
+                <img src="sodecia.png" alt="" style="width: 100px;">
+                <h3>SODECIA</h3>
+                <p>Foi realizado:<br>
+                    <br>•	Fornecimento de laudo de inspeção de NR12 e de projeto e adequação da fábrica com fornecimento de laudo de conformidade e ART.
+                </p>
+            </div>
+    
+            <div class="box" data-aos="fade-up">
+                <img src="xerox.png" alt="">
+                <h3>XEROX</h3>
+                <p>Foi realizado:<br>
+                   <br> •	Fornecimento de projeto e instalação de linha  de distribuição e montagem de painel de CCM.<br>
+                    <br>•	Instalação de SPDA e fenecimento de laudo de aterramento.
+                    </p>
+            </div>
+    
+            <div class="box" data-aos="fade-up">
+                <img src="falcare.png" alt="">
+                <h3>FALCARE EQUIPAMENTOS INDUSTRIAIS</h3>
+                <p>Foi realizado:<br>
+                <br>•	Fenecimento de mão de obra especializada para montagem de equipamentos industrias.</p>
+            </div>
+    
+            <div class="box" data-aos="fade-up">
+                <img src="magna-cosma.png" alt="">
+                <h3>MAGNA COSMA INTERNATIONAL</h3>
+                <p>Foi realizado:<br>
+                <br>•	Fornecimento de laudo de inspeção de NR12 e de projeto e adequação da fábrica com fornecimento de laudo de conformidade e ART.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="voith.png" alt="">
+                <h3>VOITH</h3>
+                <p>Foi realizado:<br>
+            <br>•	Projeto e instalações de equipamento automáticos de montagem de produtos para área automotiva.<br>
+            <br>•	Fornecimento de treinamento de LOTO para o time de manutenção e produção.
+            </p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="lear.png" alt="">
+                <h3>LEAR CORPORATION</h3>
+                <p>Foi realizado:<br>
+                    <br>•	Inspeção de SPDA, emissão de laudo  de conformidade.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="schuler.png" alt="" style="width: 200px;">
+                <h3>SCHULER</h3>
+                <p>Foi realizado:<br>
+                    <br>•	Fornecimento de mão de obra especializada para montagem de equipamentos industrias.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="continental.png" alt="">
+                <h3>CONTINENTAL</h3>
+                <p>Foi realizado:<br>
+                <br>•	Projeto e instalação de infraestrutura para distribuição de energia na para as áreas produtiva e escritórios.<br>
+                <br>•	Relocação de equipamentos e linhas de montagem e startup da linha.
+                </p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="abb.png" alt="">
+                <h3>ABB</h3>
+                <p>Foi realizado:<br>
+                <br>•	Instalação de subestação de distribuição de energia e emissão de certificado de conformidade.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="hppelzer.png" alt="">
+                <h3>HP PELZER</h3>
+                <p>Foi realizado:<br>
+                <br>•	Fornecimento de treinamento de LOTO para o time de manutenção e produção.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="faurecia.png" alt="">
+                <h3>FAURECIA</h3>
+                <p>Foi realizado:<br>
+                <br>•	Fornecimento de equipamentos automáticos para linha de montagem.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="visteon.png" alt="">
+                <h3>VISTEON</h3>
+                <p>Foi realizado:<br>
+                <br>•	Fornecimento de manutenção preditiva para área de manutenção.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="ferrolene.jpg" alt="">
+                <h3>FERROLENE S/A</h3>
+                <p>Foi realizado:<br>
+                <br>•	Projeto e instalações de equipamento automáticos de montagem de produtos para área automotiva.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="cinpal.png" alt="">
+                <h3>CINPAL</h3>
+                <p>Foi realizado:<br>
+                <br>•	Fornecimento de laudo de inspeção de NR12 e de projeto e adequação da fábrica com fornecimento de laudo de conformidade e ART.<br>
+                <br>•	Fornecimento de treinamento de LOTO para o time de manutenção e produção.
+                </p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="basf.png" alt="">
+                <h3>BASF</h3>
+                <p>Foi realizado:<br>
+                <br>•	Instalação de subestação de distribuição de energia e emissão de certificado de conformidade.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="sqmvitas.png" alt="">
+                <h3>SQM VITAS</h3>
+                <p>Foi realizado:<br>
+                <br>•	Fornecimento de laudo de inspeção de NR 10 e NR12 e de projeto e adequação da fábrica com fornecimento de laudo de conformidade e ART.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="cromex.png" alt="">
+                <h3>CROMEX</h3>
+                <p>Foi realizado:<br>
+                <br>•	Fornecimento de laudo de inspeção de NR12 e de projeto e adequação da fábrica com fornecimento de laudo de conformidade e ART.<br>
+                <br>•	Fornecimento de treinamento de LOTO e NR12 para o time de manutenção e produção.
+                </p>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <img src="WSK Logo SFundo.png" alt="">
+                <h3>WSK</h3>
+                <p>Foi realizado:<br>
+                <br>•	Fornecimento de projeto de automação e instalação de equipamentos industrias para linha de montagem.</p>
+            </div>
+    
+        </div>
+    
+    </div>
+</main>
+
+<footer style="margin-top: 10px; height: 400px;" data-aos="fade-up">
+
+    <div class="main">
+      <div class="content footer-links">
+          <div class="footer-company">
+              <h4>Empresa</h4>
+              <br><h6><a href="quemsomos.html" style="color: white; text-decoration: none;"><i class="fa-solid fa-users"></i> Sobre</h6></a><br>
+              <br><h6><a href="#falenos" style="color: white; text-decoration: none;"><i class="fa-solid fa-user"></i> Contato</h6></a>
+          </div>
+          <div class="footer-company2" style="margin-top: -30px;">
+            <br><h6><a href="#MiViVa" style="color: white; text-decoration: none;"><i class="fa-solid fa-earth-americas"></i> Missão, visão e valores</h6></a><br>
+            <br><h6><a href="#services" style="color: white; text-decoration: none;"><i class="fa-solid fa-screwdriver-wrench"></i> Serviços</h6></a><br>
+            <br><h6><a href="clientes.html" style="color: white; text-decoration: none;"><i class="fa-solid fa-handshake"></i> Clientes</h6></a>
+        </div>
+          <div class="footer-social">
+              <h4>Conecte-se</h4>
+              <div class="social-icons">
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" style="color: white;"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: white;"></i></a>
+                <a href="https://www.linkedin.com/company/tecmilindustrialservices/about/" style="color: white;"><i class="fa-brands fa-linkedin"></i></a><br>
+                
+                <br><h4>Endereço</h4><br>
+                <h6><a href="https://www.google.com/maps/place/R.+Eldridge+Gastroat,+245+-+Vila+Izabel,+Guarulhos+-+SP,+07241-420/@-23.4491038,-46.4310491,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce6210163b6d73:0xdac8134f8362cdef!8m2!3d-23.4491038!4d-46.4284742!16s%2Fg%2F11bw4xdgwh?entry=ttu" style="color: white; text-decoration: none;"><i class="fa-solid fa-location-dot"></i> R. Eldridge Gastroat, 245 Vila Izabel - Guarulhos/SP</h6></a>
+              </div>
+          </div>
+          <div class="footer-contact">
+              <h4>Contato</h4>
+              <h6><i class="fa-solid fa-phone"></i> +55 11 4378-6482</h6>
+              <h6><i class="fa-solid fa-phone"></i> +55 11 98989-6782</h6>
+              <h6><i class="fa-solid fa-envelope"></i> heitorpinheiro@tecmilservices.com</h6>
+              <h6><i class="fa-solid fa-envelope"></i> larissaoliveira@tecmilservices.com</h6>
+          </div>
+      </div>
+  </div>
+    <hr style>
+  <p>&copy; 2023 TecMil Industrial Services. Todos os direitos reservados.</p>
+  </footer>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    var header = document.getElementById('cabecalho');
+    var navigationHeader =  document.getElementById('nagivation_header');
+    var content = document.getElementById('Treinamentos');
+    var content2 = document.getElementById('cabecalho1');
+    var showSidebar = false;
+
+    function toggleSidebar() {
+        showSidebar = !showSidebar;
+        if (showSidebar) {
+            navigationHeader.style.marginLeft = '-90vw';
+            navigationHeader.style.animationName = 'showSidebar';
+            content.style.filter = 'blur(2px)';
+            content2.style.filter = 'blur(2px)';
+        }
+
+        else {
+            navigationHeader.style.marginLeft = '-200vw';
+            navigationHeader.style.animationName = '';
+            content.style.filter = '';
+            content2.style.filter = '';
+        }
+    }
+
+    function closeSidebar() {
+        if(showSidebar) {
+            toggleSidebar();
+        }
+    }
+
+    window.addEventListener('resize', function(event){
+        if(window.innerWidth > 768 && showSidebar) {
+            toggleSidebar();
+        }
+    })
+  </script>
+</body>
+</html>

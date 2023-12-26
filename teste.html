@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>TecMil Industrial Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="teste.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <script src="https://kit.fontawesome.com/51c53e7405.js" crossorigin="anonymous"></script>
+  <script src="teste.js"></script>
+
+  <style>
+    @media screen and (max-width: 768) {
+  section, main, aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav li {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .services, .card-content, .card-item, .card-wrapper {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  header {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .red-sep{
+    margin-left: 235px;
+  }
+  .titulo{
+    font-size: 30px;
+    margin-left: 250px;
+  }
+  .subtitulocard2{
+    width: 100%;
+  }
+  .subtitulocard{
+    margin-left: 250px;
+  }
+  .services, .card-content, .card-item, .card-wrapper {
+    margin-left: -125px;
+    width: 100%;
+  }
+}
+  </style>
+</head>
+<body>
+    <div class="cabecalho1">
+        <div class="social_media">
+        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/tecmilindustrialservices/about/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+  <header>
+    <nav class="cabecalho">
+        <img class="logotipo" src="Logo TecMil.png" alt="TecMil Industrial Services" style="margin-left: 20px;">
+      <ul style="margin-left: 40px;"> 
+        <div class="teste">
+        <li><a href="#"><i class="fa-solid fa-house-chimney"></i>Iníco</a></li>
+        </div>
+        <div class="teste">
+          <li><a href="quemsomos.html"><i class="fa-solid fa-users"></i>Empresa</a>
+          </div>
+        <div class="teste">
+          <li><a href="#services"><i class="fa-solid fa-screwdriver-wrench"></i>Serviços</a></li>
+          </div>
+          <div class="teste">
+            <li><a href="clientes.html"><i class="fa-solid fa-handshake"></i>Clientes</a></li>
+            </div>
+        <div class="teste">
+        <li><a href="#falenos"><i class="fa-solid fa-envelope"></i>Contato</a></li>
+        </div>
+      </ul>
+      
+      <div class="clock" style="color: #333; font-family: 'Kanit', sans-serif; margin-right: -430px; margin-top: -30px;"><i class="fa-solid fa-phone"></i> +55 11 4378-6482</div>
+      <div class="clock" style="color: #333; font-family: 'Kanit', sans-serif; display: flex; flex-direction: row; margin-top: 40px;"><i class="fa-brands fa-whatsapp"></i> +55 11 4378-6482</div>
+    </nav>
+  </header>
+
+    <section class="introducao">
+      <img class="empresarios" src="AdobeStock_378966745.jpeg" style="opacity: 85%;">
+      <div class="empresa2" data-aos="fade-left" style="position: absolute;
+      margin-top: 200px;
+  color: #fe0000;
+  font-size: 36px;
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  text-shadow: 0px 1px black;
+  font-weight: bold;
+  text-transform: uppercase;
+      top: 0;
+      right: 0;
+      text-align: center;
+      padding: 10px;">Profissionalismo, qualidade e garantia de entrega,<br>superando expectativas!</div>
+    </section>
+  
+
+  <section class="formulario" id="falenos" data-aos="fade-right">
+    <div class="mapa" style="margin-top: 1px;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.314880574149!2d-46.4284742!3d-23.449103800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6210163b6d73%3A0xdac8134f8362cdef!2sR.%20Eldridge%20Gastroat%2C%20245%20-%20Vila%20Izabel%2C%20Guarulhos%20-%20SP%2C%2007241-420!5e0!3m2!1spt-BR!2sbr!4v1700671715068!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="form_box">
+      <h4 class="title" data-aos="fade-up">Fale Conosco</h4>
+      <div class="red-sep" data-aos="fade-left" style="width: 320px;"></div>
+
+
+
+   <form action="https://formsubmit.co/lucasarap8@gmail.com" method="POST">
+        <input type="text" name="nome" placeholder="Nome" id="" data-aos="fade-left">
+        <input type="email" name="email" placeholder="Email" id="" data-aos="fade-left" >
+        <div class="telefone" style="display: flex; flex-direction: row;">
+        <input type="text" name="telefone" placeholder="DDD" id="" data-aos="fade-left" style="width: 65px;">
+        <input type="text" name="telefone" placeholder="Telefone" id="" data-aos="fade-left" style="width: 340px;">
+        <input type="text" name="telefone" placeholder="Cidade" id="" data-aos="fade-left" style="width: 420px; margin-left: 15px;">
+        </div>
+        <input type="text" name="empresa" placeholder="Empresa" id="" data-aos="fade-left" style="width: 100%;"> 
+        <input type="text" name="subject" placeholder="Assunto" id="" data-aos="fade-left">
+        <textarea name="message" data-aos="fade-left" placeholder="Mensagem"></textarea>
+        <button type="submit" data-aos="fade-left" style="margin-left: 250px; width: 150px; transition: 0.3s ease;" onclick="enviar()">Enviar</button>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500//Obrigado.html">
+   </form>
+    </div>
+  </section>
+
+  <section class="empresa" data-aos="fade-left" id="empresa">
+    <div class="tecmil">
+    <h2 data-aos="fade-left">TecMil Industrial Services</h2>
+    <div class="red-sep" data-aos="fade-left" style="width: 620px;"></div>
+    <p>A 
+      <strong style="color: #333;">TecMil Industrial Services</strong>, fundada em 2011 e com sede em
+      Guarulhos-SP, é uma empresa especializada <br>em prestação de serviços
+      industriais, consultoria industrial, instalações eletromecânicas,<br> as melhores
+      e mais eficazes soluções em automação industrial, focada no
+      desenvolvimento<br> de soluções sustentáveis de alto valor agregado e na
+      qualidade do atendimento aos seus<br> clientes e parceiros. Nosso objetivo é a
+      satisfação de nossos clientes através de um atendimento<br> personalizado,
+      simples e ágil.
+    </p>
+      <p>
+      Somos reconhecidos pelas <strong style="color: #333;">soluções rápidas</strong>, <strong style="color: #333;">diferenciadas</strong> e <strong style="color: #333;">personalizadas</strong>,
+      com mão de obra<br> especializada e capacitada, com profissionais experientes
+      que estão há mais de 20 anos no<br> ramo industrial. Sempre buscando a
+      inovação com tecnologia e equipamentos certificados para<br> garantir a
+      excelência na entrega.
+      </p>
+      <p>
+      Dentro de nossa experiência vivenciada e presente no setor de manutenção,
+      temos a visão<br> do processo como um todo, entendendo a necessidade dos
+      nossos clientes, indicando possibilidades<br> de redução de custos e resolução de
+      problemas, com senso de urgência e o prazer de fazer <br>bem feito nosso trabalho!
+    </p>
+    </div>
+    <div class="imgtecmil" data-aos="fade-up">
+      <img src="pngegg.png" style="width: 500px;">
+    </div>
+  </section>
+
+  <section class="MiViVa" id="MiViVa">
+    <div class="missao" data-aos="fade-right">
+      <img class="img_missao" src="missao azul.png" data-aos="fade-right" style="opacity: 85%;"><br>
+      <br><h3 data-aos="fade-right">Missão</h3>
+      <div class="red-sep" style="border: 2px solid #05005e;"></div>
+      <br><p data-aos="fade-right">Oferecer soluções na prestação de serviços de engenharia<br> e consultoria
+
+        industrial, manutenção e conservação, instalação e montagem, com a
+        
+        excelência na qualidade<br> e no padrão de atendimento, garantindo a <br>solidez
+        
+        nos negócios com foco na segurança <br>para clientes, fornecedores e
+        
+        colaboradores.</p>
+    </div>
+    <div class="visao" data-aos="fade-up" style="margin-top: 255px;">
+      <h3 style="color: #fe0000;
+      margin-top: -190px;
+      font-size: 48px;
+      font-family: 'Kanit', sans-serif;
+      text-align: center;
+      text-shadow: 0px 1px black;
+      font-weight: bold;
+      text-transform: uppercase;">Missão, Visão e Valores</h3>
+      <div class="red-sep" data-aos="fade-right" style="margin-top: 10px; width: 350px;  border: 2px solid red;"></div>
+      <img class="img_visao" src="visao azul.png" data-aos="fade-up" style="opacity: 85%;">
+      <h3 data-aos="fade-up">Visão</h3>
+      <div class="red-sep" style="border: 2px solid #05005e;"></div>
+      <br><p style="margin-top: 22px;" data-aos="fade-up">Ser reconhecida no mercado como referência pela excelência operacional,
+
+        qualidade e valor agregado na entrega das soluções aos nossos clientes,<br>
+        
+        operando em todo o território nacional.</p>
+        
+    </div>
+
+    <div class="valores" data-aos="fade-left">
+      <img class="img_valores" src="valores Azul.png" data-aos="fade-left" style="opacity: 85%;"><br>
+      <br><h3 data-aos="fade-left">Valores</h3>
+      <div class="red-sep" style="border: 2px solid #05005e;"></div>
+      <br><p data-aos="fade-left"><i class="fa-solid fa-check"></i> A vida em primeiro lugar;</p>
+        
+       <p data-aos="fade-left"><i class="fa-solid fa-check"></i> Valorizar e desenvolver
+        pessoas; </p>
+        
+       <p data-aos="fade-left"><i class="fa-solid fa-check"></i> Excelência organizacional;</p>
+        
+       <p data-aos="fade-left"><i class="fa-solid fa-check"></i> Agimos com propósito;</p>
+
+       <p data-aos="fade-left"><i class="fa-solid fa-check"></i> Entregamos resultados com excelência;</p>
+        
+        <p data-aos="fade-left"><i class="fa-solid fa-check"></i> Promover o bem estar e proteger
+        o ambiente.</p>
+    </div>
+  </section>
+
+  <section class="services" id="services" style="height: 1200px; padding-right: 0; padding-left: 0; padding-top: 0; padding-bottom: 0;">
+    <div class="content">
+        <div class="title-wrapper-catalog">
+            <p class="titulo" data-aos="fade-up">O que fazemos</p>
+            <div class="red-sep" data-aos="fade-left" style="width: 350px;"></div>
+        </div>
+        <div class="card-wrapper">
+            <div class="card-item" data-aos="fade-right">
+                <img src="consultorial industrial.jpg" alt="Consultoria Industrial" />
+                <div class="card-content">
+                    <h3 class="subtitulocard" style="font-size: 20px; text-align: center; color: #fe0000;">Consultoria Industrial<br><i class="fa-solid fa-industry"></i></h3>
+                    <a href="ConsultoriaIndustrial.html" style="text-decoration: none; color: white;"><button type="button" class="subtitulocard2" style="text-align: center; width: 250px; margin-left: -5px;">SAIBA MAIS!</button></a>
+                </div>
+            </div>
+            <div class="card-item" data-aos="fade-down">
+                <img src="engenharia de manutenção.png" alt="Engenharia de Manutenção" />
+                <div class="card-content">
+                  <h3 class="subtitulocard" style="font-size: 20px; text-align: center; color: #fe0000;"> Manutenção/Confiabilidade<br><i class="fa-solid fa-user-tie"></i></h3>
+                  <a href="EngenhariaManutenção.html" style="text-decoration: none; color: white;"><button type="button" class="subtitulocard2" style="text-align: center; width: 250px; margin-left: -5px;">SAIBA MAIS!</button></a>
+                </div>
+            </div>
+            <div class="card-item" data-aos="fade-left">
+                <img src="eletrica.jpg" alt="Tenis" />
+                <div class="card-content">
+                  <h3 class="subtitulocard" style="font-size: 20px; text-align: center; color: #fe0000;">Elétrica e Eletromecânica<br><i class="fa-solid fa-wrench"></i></h3>
+                  <a href="ElétricaEletromecânica.html" style="text-decoration: none; color: white;"><button type="button" class="subtitulocard2" style="text-align: center; width: 250px; margin-left: -5px;">SAIBA MAIS!</button></a>
+                </div>
+            </div>
+            <div class="card-item" data-aos="fade-right">
+                <img src="automaçao industrial.jpg" alt="Tenis" />
+                <div class="card-content">
+                  <h3 class="subtitulocard" style="font-size: 20px; text-align: center; color: #fe0000;"> Automação Industrial<br><i class="fa-solid fa-robot"></i></h3>
+                  <a href="AutomaçãoIndustrial.html" style="text-decoration: none; color: white;"><button type="button" class="subtitulocard2" style="text-align: center; width: 250px; margin-left: -5px;">SAIBA MAIS!</button></a>
+                </div>
+            </div>
+            <div class="card-item" data-aos="fade-up">
+                <img src="spda.png" alt="Tenis" />
+                <div class="card-content">
+                  <h3 class="subtitulocard" style="font-size: 20px; text-align: center; color: #fe0000;"> SPDA<br><i class="fa-solid fa-shield-halved"></i></i></h3>
+                  <a href="ProjetosIndustriais.html" style="text-decoration: none; color: white;"><button type="button" class="subtitulocard2" style="text-align: center; width: 250px; margin-left: -5px;">SAIBA MAIS!</button></a>
+                </div>
+            </div>
+            <div class="card-item" data-aos="fade-left">
+                <img src="treinamentos.webp" alt="Tenis" />
+                <div class="card-content">
+                  <h3 class="subtitulocard" style="font-size: 20px; text-align: center; color: #fe0000;"> Treinamentos<br><i class="fa-solid fa-certificate"></i></h3>
+                  <a href="Treinamentos.html" style="text-decoration: none; color: white;"><button type="button" class="subtitulocard2" style="text-align: center; width: 250px; margin-left: -5px;">SAIBA MAIS!</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main class="parceiros" id="parceiros" id="parceiros">
+  <p class="titulo" data-aos="fade-up" style="margin-top: 100px; margin-left: 75px;">Nossos clientes</p>
+  <div class="red-sep" data-aos="fade-right" style="margin-left: 582px; width: 390px;"></div>
+  <div class="slider" style="margin-top: 100px;">
+    <div class="slide-track">
+
+      <div class="slide"  data-aos="fade-up">
+        <img src="ford.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="caas.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="sodecia.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="xerox.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="falcare.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="magna-cosma.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="voith.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="lear.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="schuler.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="continental.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="abb.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="hppelzer.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="faurecia.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="visteon.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="ferrolene.jpg" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="cinpal.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="basf.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="sqmvitas.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="cromex.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="WSK Logo SFundo.png" alt="">
+      </div>
+
+      <!----------------------------------->
+
+      <div class="slide" data-aos="fade-up">
+        <img src="ford.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="caas.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="sodecia.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="xerox.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="falcare.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="magna-cosma.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="voith.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="lear.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="schuler.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="continental.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="abb.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="hppelzer.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="faurecia.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="visteon.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="ferrolene.jpg" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="cinpal.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="basf.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="sqmvitas.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="cromex.png" alt="">
+      </div>
+      <div class="slide" data-aos="fade-up">
+        <img src="WSK Logo SFundo.png" alt="">
+      </div>
+
+    </div>
+  </div>
+  <div class="salveparca" data-aos="fade-up">
+    <a href="clientes.html"><button class="opa" style="margin-left: 50px; width: 150px;">Saiba mais!</button></a>
+  </div>
+</main>
+
+
+  
+
+  <footer style="margin-top: 100px; height: 400px;" data-aos="fade-up">
+
+    <div class="main" style="margin-left: 250px;">
+      <div class="content footer-links">
+          <div class="footer-company">
+              <h4>Empresa</h4>
+              <br><h6><a href="quemsomos.html" style="color: white; text-decoration: none;"><i class="fa-solid fa-users"></i> Sobre</h6></a><br>
+              <br><h6><a href="#falenos" style="color: white; text-decoration: none;"><i class="fa-solid fa-user"></i> Contato</h6></a>
+          </div>
+          <div class="footer-company2" style="margin-top: -30px;">
+            <br><h6><a href="#MiViVa" style="color: white; text-decoration: none;"><i class="fa-solid fa-earth-americas"></i> Missão, visão e valores</h6></a><br>
+            <br><h6><a href="#services" style="color: white; text-decoration: none;"><i class="fa-solid fa-screwdriver-wrench"></i> Serviços</h6></a><br>
+            <br><h6><a href="clientes.html" style="color: white; text-decoration: none;"><i class="fa-solid fa-handshake"></i> Clientes</h6></a>
+        </div>
+          <div class="footer-social">
+              <h4>Conecte-se</h4>
+              <div class="social-icons">
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" style="color: white;"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: white;"></i></a>
+                <a href="https://www.linkedin.com/company/tecmilindustrialservices/about/" style="color: white;"><i class="fa-brands fa-linkedin"></i></a><br>
+                
+                <br><h4>Endereço</h4><br>
+                <h6><a href="https://www.google.com/maps/place/R.+Eldridge+Gastroat,+245+-+Vila+Izabel,+Guarulhos+-+SP,+07241-420/@-23.4491038,-46.4310491,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce6210163b6d73:0xdac8134f8362cdef!8m2!3d-23.4491038!4d-46.4284742!16s%2Fg%2F11bw4xdgwh?entry=ttu" style="color: white; text-decoration: none;"><i class="fa-solid fa-location-dot"></i> R. Eldridge Gastroat, 245 Vila Izabel - Guarulhos/SP</h6></a>
+              </div>
+          </div>
+          <div class="footer-contact">
+              <h4>Contato</h4>
+              <h6><i class="fa-solid fa-phone"></i> +55 11 4378-6482</h6>
+              <h6><i class="fa-solid fa-phone"></i> +55 11 98989-6782</h6>
+              <h6><i class="fa-solid fa-envelope"></i> heitorpinheiro@tecmilservices.com</h6>
+              <h6><i class="fa-solid fa-envelope"></i> larissaoliveira@tecmilservices.com</h6>
+          </div>
+      </div>
+  </div>
+    <hr style>
+  <p>&copy; 2023 TecMil Industrial Services. Todos os direitos reservados.</p>
+  </footer>
+  <script src="teste.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
